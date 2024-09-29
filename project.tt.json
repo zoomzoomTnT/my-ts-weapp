@@ -1,0 +1,9 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "my-ts-weapp",
+  "appid": "testAppId",
+  "setting": {
+    "es6": false,
+    "minified": false
+  }
+}
