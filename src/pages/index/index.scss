@@ -1,0 +1,33 @@
+.list-item .at-list__item-content.item-content {
+  display: flex; /* Use flexbox to align children on the same line */
+  align-items: center; /* Center the items vertically */
+  justify-content: space-between; /* Distribute space between the title and extra content */
+  padding: 0;
+}
+
+.list-item .at-list__item-content.item-content .item-content__info {
+  flex: 1; /* Allow the info container to take up available space */
+  display: flex; /* Use flexbox to align title and note on the same line */
+  align-items: center; /* Center the items vertically */
+  justify-content: flex-start; /* Align items to the start of the container */
+}
+
+.list-item .at-list__item-content.item-content .item-content__info .item-content__info-title,
+.list-item .at-list__item-content.item-content .item-content__info .item-content__info-note {
+  white-space: nowrap; /* Prevent the text from wrapping to a new line */
+  overflow: hidden; /* Hide text that overflows the container */
+  text-overflow: ellipsis; /* Show an ellipsis when the text is truncated */
+}
+
+.list-item .at-list__item-content.item-content .item-content__info .item-content__info-title {
+  width: 200px; /* Set a fixed width for the title */
+}
+
+.list-item .at-list__item-content.item-content .item-content__info .item-content__info-note {
+  margin-left: auto; /* Auto margin will push the note to the center of the available space */
+  margin-right: auto; /* This will push the note to the left from the end of the container, centering it */
+}
+
+.list-item .at-list__item-extra {
+  width: 200px;
+}
